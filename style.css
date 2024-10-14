@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family:  Darker Grotesque; /* Escolha a fonte */
+    line-height: 1.6; /* Define o espaçamento entre linhas */
+    background-color: #f4f4f4; /* Cor de fundo da página */
+    color: #333; /* Cor do texto */
+    padding: 20px; /* Espaçamento interno da página */
+}
+
+/* Layout principal */
+.container {
+    max-width: 1200px; /* Largura máxima da página */
+    margin: 0 auto; /* Centraliza o conteúdo */
+    padding: 20px; /* Espaçamento interno */
+}
+
+/* Cabeçalho */
+.header_itens {
+    background-color: #333; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    padding: 20px 0; /* Espaçamento */
+    text-align: center; /* Alinhamento centralizado */
+}
+
+
+
+
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px; /* Espaçamento superior */
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem; /* Tamanho da fonte */
+}
