@@ -4,30 +4,107 @@
     box-sizing: border-box;
 }
 body {
-    font-family:  Darker Grotesque; /* Escolha a fonte */
-    line-height: 1.6; /* Define o espaçamento entre linhas */
-    background-color: #f4f4f4; /* Cor de fundo da página */
-    color: #333; /* Cor do texto */
-    padding: 20px; /* Espaçamento interno da página */
+    font-family:  Darker Grotesque; /
+    line-height: 1.6; 
+    background-color: #f4f4f4;
+    color: #333; /
+    padding: 20px; 
 }
 
-/* Layout principal */
 .container {
-    max-width: 1200px; /* Largura máxima da página */
-    margin: 0 auto; /* Centraliza o conteúdo */
-    padding: 20px; /* Espaçamento interno */
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 20px; 
 }
-
 /* Cabeçalho */
-.header_itens {
-    background-color: #333; /* Cor de fundo */
-    color: #fff; /* Cor do texto */
-    padding: 20px 0; /* Espaçamento */
-    text-align: center; /* Alinhamento centralizado */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    border-block: solid #8F589A 5px;
+    margin-bottom: 80px
+}
+
+.navbar a {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Conteúdo-p1 */
+.conteudo-p1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+    text-align: center; 
+    font-size: 18px;
+}
+
+.inicial {
+    display: flex;
+    align-items: center;
+    flex-direction: column;    
+    margin-top: 35px;  
 }
 
 
+h2 {
+    font-size: 30px;
+    color: #8F589A;
+}
 
+p{
+    font-size: 18px;
+}
+
+.saiba-mais {
+    all: unset; 
+    text-decoration: none;
+    background-color: #D7CBD8;
+    color: #8F589A;
+    border-radius: 10px;
+    padding: 3px 20px;
+    cursor: pointer;
+    margin: 25px;  
+}
+
+.foto-principal {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: #e5d8f0;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.redes-sociais {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.redes-sociais a {
+    display: flex;
+    align-items: center;
+    height: auto;
+}
+
+.foto-daniele {
+    position: absolute;
+    bottom: -30px;
+    right: -30px;
+    width: 270px;
+    height: auto;
+}
+
+/* Conteúdo p2 */
+
+.conteudo-p2 {
+    margin-top: 100px;
+    border-top: 5px solid #8F589A;
+}
 
 
 /* Rodapé */
