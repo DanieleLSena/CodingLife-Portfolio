@@ -6,7 +6,7 @@ CSS3 para estilização e layout responsivo.
 JavaScript para interatividade e funcionalidades dinâmicas.
 React (em versões futuras) para criar componentes reutilizáveis e melhorar a experiência do usuário.
 
-🚀 Objetivo do Projeto
+🚀 Objetivo do Projeto<br>
 Este portfólio foi criado para:
 Apresentar meus projetos e habilidades técnicas.
 Facilitar o contato com recrutadores e empresas de tecnologia.
