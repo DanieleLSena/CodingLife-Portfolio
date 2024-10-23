@@ -15,6 +15,7 @@ body {
     margin: 0 auto; 
     padding: 20px; 
 }
+
 /* Cabeçalho */
 .navbar {
     display: flex;
@@ -45,7 +46,6 @@ body {
     flex-direction: column;    
     margin-top: 35px;  
 }
-
 
 h2 {
     font-size: 30px;
@@ -99,23 +99,186 @@ p{
 }
 
 /* Conteúdo p2 */
-
 .conteudo-p2 {
     margin-top: 100px;
     border-top: 5px solid #8F589A;
 }
 
+h1{
+    margin-top: 25px;
+    color: #8F589A;
+    text-decoration: underline #D7CBD8;
+}
+
+.sobre-mim {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.container-s{
+    display: flex;
+    justify-content: center;
+}
+
+.container-slide {
+    width: 50vw;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.paginas-slide {
+    display: inline-block;
+    animation: anima 5s linear infinite;
+}
+
+@keyframes anima {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Projetos */
+.conteudo-p3 {
+    margin-top: 80px;
+    border-top: 5px solid #8F589A;
+}
+
+.projeto-titulo {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.img-projetos{
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.img-projetos img{
+    border-radius: 10px;
+    box-shadow: 0 2px 10px #D9D9D9;
+}
+
+.projetos-texto{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.projetos-git{
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.chega-mais{
+    margin-top: 15px;
+    max-width: 150px;
+    background-color: #D7CBD8;
+    color: #8F589A;
+    padding: 10px;
+    border: #8F589A;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px #D9D9D9;
+    cursor: pointer;
+}
+
+
+/* Curiosidades */
+.conteudo-p4 {
+    margin-top: 100px;
+    border-top: 5px solid #8F589A;
+}
+
+.curiosidade-titulo {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.img-curiosidades{
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.img-curiosidades img{
+    border-radius: 10px;
+    box-shadow: 0 2px 10px #D9D9D9;
+}
+
+
+/* Contato */
+.contato {
+    margin-top: 50px;
+    border-top: 5px solid #8F589A;
+    display: flex; 
+    flex-direction: column;
+}
+
+.contato-titulo {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.contato-dados {
+    display: flex;
+    justify-content: center;
+}
+
+.contato-dados label {
+    color: #8F589A;
+    font-size: 14px;
+}
+
+.contato-dados input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: #8F589A;
+    box-shadow: 0 2px 10px #D9D9D9;
+    background-color: #D7CBD8;
+}
+
+.contato-dados button {
+    background-color: #D7CBD8;
+    color: #8F589A;
+    padding: 10px;
+    border: #8F589A;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px #D9D9D9;
+    cursor: pointer;
+}
+
+.contato-dados textarea {
+    background-color: #D9D9D9;
+    color: #333;
+    border: #8F589A;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px #D9D9D9;
+}
 
 /* Rodapé */
 footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
     padding: 10px 0;
-    margin-top: 40px; /* Espaçamento superior */
+    margin-top: 40px; 
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
-footer p {
+.info-rodape{
+    display: flex;
+    align-items: center;
     margin: 0;
-    font-size: 0.9rem; /* Tamanho da fonte */
+    font-size: 0.9rem;  
 }
