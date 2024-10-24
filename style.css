@@ -10,20 +10,19 @@ body {
     color: #333;
 }
 
-.container {
-    max-width: 1200px; 
-    margin: 0 auto; 
-    padding: 20px; 
-}
-
 /* Cabeçalho */
 .navbar {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 50px;
-    border-block: solid #8F589A 5px;
-    margin-bottom: 80px
+    border-block: solid #8F589A 3px;
+    padding: px; 
+    position: fixed; 
+    z-index: 2; 
+    width: 100%;
+    background-color:#f9effa;
+    
 }
 
 .navbar a {
@@ -39,13 +38,13 @@ body {
     justify-content: space-around; 
     text-align: center; 
     font-size: 18px;
+    padding-top: 150px;
 }
 
 .inicial {
     display: flex;
     align-items: center;
     flex-direction: column;    
-    margin-top: 35px;  
 }
 
 h2 {
@@ -54,7 +53,7 @@ h2 {
 }
 
 p{
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .saiba-mais {
@@ -65,7 +64,8 @@ p{
     border-radius: 10px;
     padding: 3px 20px;
     cursor: pointer;
-    margin: 25px;  
+    margin: 25px;
+    box-shadow: 0 2px 10px #8F589A;  
 }
 
 .foto-principal {
@@ -99,16 +99,17 @@ p{
     height: auto;
 }
 
-/* Conteúdo p2 */
+/* Conteúdo p2 - sobre mim*/
 .conteudo-p2 {
     margin-top: 100px;
-    border-top: 5px solid #8F589A;
+    border-top: 3px solid #8F589A;
 }
 
 h1{
-    margin-top: 25px;
+    margin-top: 35px;
     color: #8F589A;
     text-decoration: underline #D7CBD8;
+    font-size: 25px;
 }
 
 .sobre-mim {
@@ -135,23 +136,13 @@ h1{
     animation: anima 5s linear infinite;
 }
 
-@keyframes anima {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-50%);
-    }
-}
-
 /* Projetos */
 .conteudo-p3 {
-    margin-top: 80px;
-    border-top: 5px solid #8F589A;
+    margin-top: 60px;
+    border-top: 3px solid #8F589A;
 }
 
 .projeto-titulo {
-    margin-top: 20px;
     display: flex;
     justify-content: center;
 }
@@ -164,7 +155,7 @@ h1{
 
 .img-projetos img{
     border-radius: 10px;
-    box-shadow: 0 2px 10px #D9D9D9;
+    box-shadow: 0 2px 10px #8F589A;
 }
 
 .projetos-texto{
@@ -178,53 +169,60 @@ h1{
     justify-content: center;
 }
 
-.chega-mais{
-    margin-top: 15px;
-    max-width: 150px;
+.chega-mais {
+    text-decoration: none;
     background-color: #D7CBD8;
     color: #8F589A;
-    padding: 10px;
-    border: #8F589A;
-    border-radius: 4px;
-    box-shadow: 0 2px 10px #D9D9D9;
+    border-radius: 10px;
+    padding: 3px 20px;
     cursor: pointer;
+    box-shadow: 0 2px 10px #8F589A;
+    
 }
-
 
 /* Curiosidades */
 .conteudo-p4 {
-    margin-top: 100px;
-    border-top: 5px solid #8F589A;
+    margin-top: 60px;
+    border-top: 3px solid #8F589A;
 }
 
-.curiosidade-titulo {
-    margin-top: 20px;
+.curiosidades-container{
     display: flex;
-    justify-content: center;
-}
-
-.img-curiosidades{
-    margin-top: 45px;
-    display: flex;
+    align-items: center;
     justify-content: space-around;
 }
 
-.img-curiosidades img{
-    border-radius: 10px;
-    box-shadow: 0 2px 10px #D9D9D9;
+.img-curiosidades {
+    width: 40vw;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-top: 80px;
 }
 
+.slide-curiosidades {
+    display: inline-block;
+    animation: anima 15s linear infinite;
+}
+
+.img-curiosidades img{
+    border-radius: 30px;
+    box-shadow: 0 2px 8px #8F589A;
+    max-width: 200px;
+}
+
+.texto-curiosidades{
+    text-align: center;
+}
 
 /* Contato */
 .contato {
-    margin-top: 50px;
-    border-top: 5px solid #8F589A;
+    margin-top: 80px;
+    border-top: 3px solid #8F589A;
     display: flex; 
     flex-direction: column;
 }
 
 .contato-titulo {
-    margin-top: 50px;
     display: flex;
     justify-content: center;
 }
@@ -236,7 +234,7 @@ h1{
 
 .contato-dados label {
     color: #8F589A;
-    font-size: 14px;
+    font-size: 20px;
 }
 
 .contato-dados input {
@@ -246,7 +244,7 @@ h1{
     margin-bottom: 15px;
     border-radius: 4px;
     border: #8F589A;
-    box-shadow: 0 2px 10px #D9D9D9;
+    box-shadow: 0 2px 10px #8F589A;
     background-color: #D7CBD8;
 }
 
@@ -256,7 +254,7 @@ h1{
     padding: 10px;
     border: #8F589A;
     border-radius: 4px;
-    box-shadow: 0 2px 10px #D9D9D9;
+    box-shadow: 0 2px 10px #8F589A;
     cursor: pointer;
 }
 
@@ -265,21 +263,23 @@ h1{
     color: #333;
     border: #8F589A;
     border-radius: 4px;
-    box-shadow: 0 2px 10px #D9D9D9;
+    box-shadow: 0 2px 10px #8F589A;
 }
 
 /* Rodapé */
 footer {
-    padding: 10px 0;
-    margin-top: 40px; 
+    padding: 3px 0;
+    margin-top: 50px; 
     display: flex;
     justify-content: center;
-    text-align: center;
+    text-align: center; 
 }
 
-.info-rodape{
-    display: flex;
-    align-items: center;
-    margin: 0;
-    font-size: 0.9rem;  
+@keyframes anima {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }
